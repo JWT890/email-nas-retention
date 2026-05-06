@@ -15,4 +15,6 @@ VDI disk and dynamic
 Size of 60 GB   
 Then set the network to bridged and attach the OMV iso. 
 
-Then boot up the VM and go through the prompts that are straighforward and keep the domain blank. 
+Then boot up the VM and go through the prompts that are straighforward and keep the domain blank.   
+After waiting a few minutes:    
+![alt text](image.png)  
