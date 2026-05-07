@@ -18,3 +18,12 @@ Then set the network to bridged and attach the OMV iso.
 Then boot up the VM and go through the prompts that are straighforward and keep the domain blank.   
 After waiting a few minutes:    
 ![alt text](image.png)  
+Take note of the the address and go to a browser and type it to access OMV like so: 
+![alt text](image-1.png)    
+Then enter in the admin credentials to get in and see this: 
+![alt text](image-2.png)    
+
+# OMV
+Then go the user icon and select change password for omv-nas to something more secure.  
+Then go to storage and click on disks to see if the disk for the system shows up:   
+![alt text](image-3.png)
