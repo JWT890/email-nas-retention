@@ -34,3 +34,9 @@ Click on save and it will go the mount screen like below:
 Then go to Storage -> Shared Folders and create the folder like so with similar input: 
 ![alt text](image-6.png)    
 Hit save then hit configure and then go to Services -> SMB -> Shares and click on the dropdown in shares and see the shares creation and link the email-archive that was created and set to to guests-allowed. Then hit save and config.    
+Then go the command line on host and write this command:    
+![alt text](image-7.png)    
+Since it doesn't show anything, that means it worked.   
+Backtracking a little bit but for this screen:  
+![alt text](image-8.png)    
+Make sure the enabled at the very top is set it on or it will not work or error
