@@ -27,3 +27,10 @@ Then enter in the admin credentials to get in and see this:
 Then go the user icon and select change password for omv-nas to something more secure.  
 Then go to storage and click on disks to see if the disk for the system shows up:   
 ![alt text](image-3.png)
+Make sure before hand to create a second disk instead so that can be seen and like so:  
+![alt text](image-4.png)    
+Click on save and it will go the mount screen like below:   
+![alt text](image-5.png)    
+Then go to Storage -> Shared Folders and create the folder like so with similar input: 
+![alt text](image-6.png)    
+Hit save then hit configure and then go to Services -> SMB -> Shares and click on the dropdown in shares and see the shares creation and link the email-archive that was created and set to to guests-allowed. Then hit save and config.    
