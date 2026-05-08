@@ -49,3 +49,12 @@ When it says Share OK, the NAS is now mounted and time to move on to the next.
 In the command line type mkdir ~/mail-retention then cd ~/mail-retention.   
 Then run sudo apt install python3-pip, then run pip install pyyaml python-dotenv.   
 Then type nano ~/mail-retention/.env which will open up a empty file for the gmail, app password and path for the nas. For the Gmail App password go to myaccount.google.com after enabling 2 factor and type in myaccount.google.com/apppasswords and click on create and name it something and copy and save the password generated.  
+Then type nano ~/mail-retention/config.yaml to create a yaml file with these contents:  
+![alt text](image-10.png)   
+For the line delete_after_archive: false means when set to false that the emails will basically be copied from Gmail to the NAS while true means they will be deleted and then stored on the NAS.   
+Then type nano imap3_retention.py and enter in this code from the file, made with Claude, and run it in the mail-retention folder by running python3 imap_retention.py and seeing the start of it:  
+![alt text](image-11.png)   
+After a few minutes, since it was set to run on 1,000 emails should see the message that the dry run was complete with several files created in it: 
+![alt text](image-12.png)   
+Since this was a dry run it will not have wrote a .eml file and just logged to retention.log with the same output as when the command was run.  
+
