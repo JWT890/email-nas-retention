@@ -66,7 +66,7 @@ But first go and create a seconday user account, in OMV go to System -> Users ->
 Then hit save and apply changes. Then go to Services -> SMB/CIFS -> Shares -> then click on email-archive and click on edit and change the Public option from Guests allowed to Guests only:    
 ![alt text](image-15.png)   
 Then in the command line and type sudo nano /etc/nas-credentials and enter in like this:    
-username=yourusernameforsecondnasuser
+username=yourusernameforsecondnasuser   
 password=passwordwithoutspecialcharacters   
 Then save it and type sudo chmod 6000 /etc/nas-credentials. Then type this: 
 ![alt text](image-16.png)
