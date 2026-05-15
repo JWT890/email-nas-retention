@@ -77,3 +77,6 @@ Then run python3 imap_retention.py and should see this after a few minutes:
 Then run ls /mnt/nas/emails/*.eml wc -l to see this:    
 ![alt text](image-19.png)   
 This shows that the emails are now in the nas. For the option to remove emails from Google drive space change delete_after_archive from false to true in config.yaml
+Then run it again and type ls -la /mnt/nas/emails/1.eml and then cd /mnt/nas/emails and then sha256sum -c 1.eml.sha256  
+![alt text](image-20.png)   
+Thus you can see that the emails have been archived fully and will be removed from Google Drive and free up space on your computer. 
