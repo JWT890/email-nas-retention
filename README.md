@@ -57,4 +57,16 @@ Then type nano imap3_retention.py and enter in this code from the file, made wit
 After a few minutes, since it was set to run on 1,000 emails should see the message that the dry run was complete with several files created in it: 
 ![alt text](image-12.png)   
 Since this was a dry run it will not have wrote a .eml file and just logged to retention.log with the same output as when the command was run.  
-
+For it to work fully, change the dry run option from true to false to set to a more live avenue. Additionally can modify the rules to be years such as date_from and date_to with "YYYY-MM-DD"  
+With set false for dry_run:    
+![alt text](image-13.png)   
+And run the imap.retention.py script    
+But first go and create a seconday user account, in OMV go to System -> Users -> Add and name the user nasuser with password that doesn't have special characters in it. Then go to Storage -> Shared Folders and click on the folder permissions and add the nasuser with read/write like so:  
+![alt text](image-14.png)   
+Then hit save and apply changes. Then go to Services -> SMB/CIFS -> Shares -> then click on email-archive and click on edit and change the Public option from Guests allowed to Guests only:    
+![alt text](image-15.png)   
+Then in the command line and type sudo nano /etc/nas-credentials and enter in like this:    
+username=yourusernameforsecondnasuser
+password=passwordwithoutspecialcharacters   
+Then save it and type sudo chmod 6000 /etc/nas-credentials. Then type this: 
+![alt text](image-16.png)
