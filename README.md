@@ -70,3 +70,10 @@ username=yourusernameforsecondnasuser
 password=passwordwithoutspecialcharacters   
 Then save it and type sudo chmod 6000 /etc/nas-credentials. Then type this: 
 ![alt text](image-16.png)
+Then go to config.yaml and edit like this:  
+![alt text](image-17.png)   
+Then run python3 imap_retention.py and should see this after a few minutes: 
+![alt text](image-18.png)   
+Then run ls /mnt/nas/emails/*.eml wc -l to see this:    
+![alt text](image-19.png)   
+This shows that the emails are now in the nas. For the option to remove emails from Google drive space change delete_after_archive from false to true in config.yaml
